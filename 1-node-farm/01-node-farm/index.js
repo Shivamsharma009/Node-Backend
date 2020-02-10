@@ -31,10 +31,23 @@ const http = require('http');
 //////SERVER
 
 const server = http.createServer((req,res) =>{
-    //console.log(req);
-    res.end('Hello from the Server!');
+    const pathName = req.url;
+
+    if(pathName === '/' || pathName === '/overview'){
+        res.end('This is the Overview');
+    }else if(pathName === '/product'){
+        res.end('This is the Product');
+    }else {
+        res.writeHead(404 ,{
+            'Content-type': 'text\html',
+            'my-own-header': 'hello-world'
+        });
+        res.end('<h1>Page not Found!</h1>');
+        
+    }
+   // res.end('Hello from the Server!');
 });
 
-server.listen(8000,'localhost',() => {
+server.listen(8000,'127.0.0.1',() => {
     console.log('Listening on the port 8000');
 });
