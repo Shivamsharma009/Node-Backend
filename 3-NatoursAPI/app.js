@@ -9,7 +9,18 @@ const tours = JSON.parse(
     fs.readFileSync('./dev-data/data/tours-simple.json')
 );
 
-app.get('/api/v1/tours/:id', (req, res) => {
+const getAllTours = (req, res) => {
+    res.status(200).json({
+        status: 'sucess',
+        results: tours.length,
+        data: {
+            tours
+        }
+    });
+}
+
+
+const getTour = (req, res) => {
     console.log(req.params);
     const id = req.params.id * 1;
     const tour = tours.find(el => el.id === id)
@@ -28,9 +39,8 @@ app.get('/api/v1/tours/:id', (req, res) => {
             tour
         }
     });
-});
-
-app.post('/api/v1/tours', (req, res) => {
+}
+const createnewTour = (req, res) => {
     //console.log(req.body);
     //res.send('Done');
     const newID = tours[tours.length - 1].id + 1;
@@ -52,8 +62,8 @@ app.post('/api/v1/tours', (req, res) => {
                 }
             });
         });
-});
-app.patch('/api/v1/tours/:id', (req, res) => {
+}
+const updateTour = (req, res) => {
     if (req.params.id * 1 > tours.length) {
         return res.status(404).json({
             status: 'Failed',
@@ -67,8 +77,8 @@ app.patch('/api/v1/tours/:id', (req, res) => {
         }
     });
 
-});
-app.delete('/api/v1/tours/:id', (req, res) => {
+}
+const deleteTour = (req, res) => {
     if (req.params.id * 1 > tours.length) {
         return res.status(404).json({
             status: 'Failed',
@@ -80,7 +90,19 @@ app.delete('/api/v1/tours/:id', (req, res) => {
         data: null
     });
 
-});
+}
+
+
+//app.get('/api/v1/tours', getAllTours);
+//app.get('/api/v1/tours/:id', getTour);
+//app.post('/api/v1/tours', createnewTour);
+//app.patch('/api/v1/tours/:id', updateTour);
+//app.delete('/api/v1/tours/:id', deleteTour);
+
+
+app.route('/api/v1/tours').get(getAllTours).post(createnewTour);
+app.route('/api/v1/tours/:id').get(getTour).patch(updateTour).delete(deleteTour);
+
 const port = 3000;
 app.listen(port, () => {
     console.log('App running on port ' + port + '........');
