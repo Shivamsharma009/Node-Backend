@@ -1,2 +1,3 @@
-# Node-Backend
-##   In this Module We Build Restful API Using Node MongoDB and Mongoose
+# Natours Application
+
+Built using modern technologies: node.js, express, mongoDB, mongoose and friends 😁
