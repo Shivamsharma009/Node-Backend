@@ -5,7 +5,7 @@ An awesome tour booking site built on top of NodeJS.
 Demo • Key Features • Demonstration • How To Use • API Usage • Deployment • Build With • To-do • Installation • Known Bugs • Future Updates • Acknowledgement
 
 Deployed Version
-Live demo (Feel free to visit) 👉 : https://lakshman-natours.herokuapp.com/
+Live demo (Feel free to visit) 👉 : https://www.natours.dev/
 
 Key Features
 Authentication and Authorization
@@ -58,13 +58,13 @@ Check Natours API Documentation for more info.
 
 API Features:
 
-Tours List 👉 https://lakshman-natours.herokuapp.com/api/v1/tours
+Tours List 👉 https://www.natours.dev/api/v1/tours
 
-Tours State 👉 https://lakshman-natours.herokuapp.com/api/v1/tours/tour-stats
+Tours State 👉 https://www.natours.dev/api/v1/tours/tour-stats
 
-Get Top 5 Cheap Tours 👉 https://lakshman-natours.herokuapp.com/api/v1/tours/top-5-cheap
+Get Top 5 Cheap Tours 👉 https://www.natours.dev/api/v1/tours/top-5-cheap
 
-Get Tours Within Radius 👉 https://lakshman-natours.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi
+Get Tours Within Radius 👉 https://www.natours.dev/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi
 
 Deployment
 The website is deployed with git into heroku. Below are the steps taken:
@@ -116,7 +116,7 @@ Setting up ESLint and Prettier in VS Code 👇
 $ npm i eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-node
 eslint-plugin-import eslint-plugin-jsx-a11y  eslint-plugin-react --save-dev
 Known Bugs
-Feel free to email me at lakshman.gope2@gmail.com if you run into any issues or have questions, ideas or concerns. Please enjoy and feel free to share your opinion, constructive criticism, or comments about my work. Thank you! 🙂
+Feel free to email me at shivamsharma0501@gmail.com if you run into any issues or have questions, ideas or concerns. Please enjoy and feel free to share your opinion, constructive criticism, or comments about my work. Thank you! 🙂
 
 Future Updates
 Enable PWA
