@@ -10,18 +10,19 @@ process.on('uncaughtException', err => {
 dotenv.config({ path: './config.env' });
 const app = require('./app');
 
-const DB = process.env.DATABASE.replace(
-  '<PASSWORD>',
-  process.env.DATABASE_PASSWORD
-);
-
+const password = encodeURIComponent('RvLbj74FBaTiKSCX');
 mongoose
-  .connect(DB, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false
-  })
-  .then(() => console.log('DB connection successful!'));
+  .connect(
+    `mongodb+srv://Shiv:${password}@cluster0.pltbo.mongodb.net/natours-app?retryWrites=true&w=majority`,
+    {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    }
+  )
+  .then(() => console.log('DB Connection Sucessfull!'))
+  .catch(() => console.log('Not Connected'));
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
