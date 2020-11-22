@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://www.natours.dev/"><img src="https://github.com/Shivamsharma009/Node-Backend/blob/master/public/img/logo-green-round.png" alt="Natours" width="200"></a>
+  <a href="https://tourismapp-shivam.herokuapp.com/"><img src="https://github.com/Shivamsharma009/Node-Backend/blob/master/public/img/logo-green-round.png" alt="Natours" width="200"></a>
   <br>
   Natours
   <br>
@@ -25,7 +25,7 @@
 
 ## Deployed Version
 
-Live demo (Feel free to visit) 👉 : https://www.natours.dev/
+Live demo (Feel free to visit) 👉 : https://tourismapp-shivam.herokuapp.com/
 
 ## Key Features
 
@@ -101,13 +101,13 @@ Check [Natours API Documentation](https://documenter.getpostman.com/view/8689170
 
 <b> API Features: </b>
 
-Tours List 👉 https://www.natours.dev/api/v1/tours
+Tours List 👉 https://tourismapp-shivam.herokuapp.com/api/v1/tours
 
-Tours State 👉 https://www.natours.dev/api/v1/tours/tour-stats
+Tours State 👉 https://tourismapp-shivam.herokuapp.com/api/v1/tours/tour-stats
 
-Get Top 5 Cheap Tours 👉 https://www.natours.dev/api/v1/tours/top-5-cheap
+Get Top 5 Cheap Tours 👉 https://tourismapp-shivam.herokuapp.com/api/v1/tours/top-5-cheap
 
-Get Tours Within Radius 👉 https://www.natours.dev/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi
+Get Tours Within Radius 👉 https://tourismapp-shivam.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi
 
 ## Deployment
 
@@ -186,7 +186,3 @@ Please enjoy and feel free to share your opinion, constructive criticism, or com
 - Featured Tours
 - Recently Viewed Tours
 - And More ! There's always room for improvement!
-
-## Acknowledgement
-
-- This project is part of the online course I've taken at Udemy. Thanks to Jonas Schmedtmann for creating this awesome course! Link to the course: [Node.js, Express, MongoDB & More: The Complete Bootcamp 2019](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/)
